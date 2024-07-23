@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="chatBox">
+            <p class="text-center mt-3">Sagar</p>
+            <div class="boderChatBox">
+                <div id="chatMessages" class="chat-messages">
+                    <!-- Chat messages will be appended here -->
+                </div>
+            </div>
+            <div class="inputss">
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Message</span>
+                    <input type="text" class="form-control" id="userMessage" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <button type="button" class="btn btn-success" id="sendMessageBtn">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="responseBox">
+            <p class="text-center mt-3">Mummy</p>
+            <div class="boderChatBox">
+                <div id="responseMessages" class="chat-messages">
+                    <!-- Response messages will be appended here -->
+                </div>
+            </div>
+            <div class="inputss">
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Response</span>
+                    <input type="text" class="form-control" id="mummyMessage" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <button type="button" class="btn btn-primary" id="sendMummyMessageBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
